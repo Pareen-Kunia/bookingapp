@@ -1,10 +1,10 @@
 import { Grid,Box,InputAdornment, Typography, AppBar, Toolbar, IconButton, Button, withStyles, TextField, FormControlLabel, Checkbox, Menu } from '@material-ui/core';
 import { PropTypes } from 'prop-types'
 import VisibilityIcon from '@material-ui/icons/Visibility';
-import FacebookIcon from '@material-ui/icons/Facebook';
 import MenuIcon from '@material-ui/icons/Menu';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-// import {createTheme } from '@material-ui/core/styles';
+import OAuthSignIn from './OAuthSignIn';
+
+
 const styles = {
     root: {
       flexGrow: 1,
@@ -134,34 +134,7 @@ function SignUp(props) {
         Or <br />
         Sign Up Using... <br />
     </Typography> <br /> <br />
-    <Grid container direction={'row'} spacing={3} alignItems='center' justifyContent='center'>
-    <Grid item>
-        <Button variant="contained"
-        className = {classes.button}
-        startIcon={<FacebookIcon />}
-        >
-            Facebook
-        </Button>
-        </Grid>
-        <Grid item>
-        <Button variant="contained"
-        className = {classes.button}
-        size="large"
-        color="primary"
-        startIcon={<LinkedInIcon />}
-        >
-            LinkedIn
-        </Button>
-        </Grid>
-        <Grid item>
-        <Button variant="contained"
-        className = {classes.button}
-        startIcon={<FacebookIcon />}
-        >
-            Facebook
-        </Button>
-        </Grid>
-    </Grid>
+    <OAuthSignIn />
     </div>
     )
 }
