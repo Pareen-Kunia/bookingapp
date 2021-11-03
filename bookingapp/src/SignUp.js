@@ -1,18 +1,13 @@
-import { Grid,Box,InputAdornment, Typography, AppBar, Toolbar, IconButton, Button, withStyles, TextField, FormControlLabel, Checkbox } from '@material-ui/core';
+import { Grid,Box,InputAdornment, Typography, AppBar, Toolbar, IconButton, Button, withStyles, TextField, FormControlLabel, Checkbox, Menu } from '@material-ui/core';
 import { PropTypes } from 'prop-types'
 import VisibilityIcon from '@material-ui/icons/Visibility';
-import GoogleIcon from '@material-ui/icons';
-import boxShadow from '@material-ui/system'
-import { ThemeProvider, createTheme } from '@material-ui/core/styles';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import MenuIcon from '@material-ui/icons/Menu';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+// import {createTheme } from '@material-ui/core/styles';
 const styles = {
     root: {
       flexGrow: 1,
-    },
-    appbar: {
-      alignItems: 'center',
-    },
-    login : {
-        justify : 'right',
     },
     forms: {
         display: "flex",
@@ -31,6 +26,13 @@ const styles = {
     txt: {
         margin: '5',
     },
+    button: {
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    trial: {
+        flexGrow: 1 
+    },
   };
    
 function TermsAndCond() {
@@ -46,37 +48,28 @@ function TermsAndCond() {
     )
 }
 
-const theme = createTheme({
-    typography: {
-        h4: {
-        fontWeight: 500,
-    },
-    subtitle1: {
-        fontWeight: 300,
-        fontSize: 30,
-    },
-},
-});
 
 function SignUp(props) {
     const { classes } = props;
     return (
         <div>
-        <Grid container direction={'row'}>
-        </Grid>
-        
-        <form>
-        <div className={classes.root}>
-        <AppBar position="static" className={classes.appbar}>
-        <Toolbar>
-            <IconButton edge="start" color="inherit" aria-label="menu" />
-            <Typography variant="h6" align="center">
-                Booking App
+        <AppBar position="static">
+          <Toolbar>
+          <Grid container direction={'row'} className={classes.trial} spacing={3}>
+          <Grid item>
+            <IconButton edge="start" color="inherit" aria-label="menu" size="large">
+                <MenuIcon />
+            </IconButton>
+            </Grid>
+            <Grid item>
+            <Typography variant="h4" align="center" m="auto">
+              'O'ppointment
             </Typography>
-            <Button color="inherit" variant="outlined" className={classes.login} align="right">Login</Button>
+            </Grid>
+            </Grid>
+            <Button color="inherit" variant="outlined">Login</Button>
         </Toolbar>
-    </AppBar>
-    </div>
+    </AppBar><br />
     <Box className={classes.box} m="auto" p={3} sx={{ boxShadow: 5}}>
     <Typography variant="h4" align = "center">
         Sign Up
@@ -137,15 +130,43 @@ function SignUp(props) {
         
         </form>
         </Box>
-    </form>
-    <Typography variant="subtitle1" align="center">
-        Or
-    </Typography>
+    <Typography variant="h5" align="center">
+        Or <br />
+        Sign Up Using... <br />
+    </Typography> <br /> <br />
+    <Grid container direction={'row'} spacing={3} alignItems='center' justifyContent='center'>
+    <Grid item>
+        <Button variant="contained"
+        className = {classes.button}
+        startIcon={<FacebookIcon />}
+        >
+            Facebook
+        </Button>
+        </Grid>
+        <Grid item>
+        <Button variant="contained"
+        className = {classes.button}
+        size="large"
+        color="primary"
+        startIcon={<LinkedInIcon />}
+        >
+            LinkedIn
+        </Button>
+        </Grid>
+        <Grid item>
+        <Button variant="contained"
+        className = {classes.button}
+        startIcon={<FacebookIcon />}
+        >
+            Facebook
+        </Button>
+        </Grid>
+    </Grid>
     </div>
     )
 }
 SignUp.propTypes = {
-    classes: PropTypes.object.isRequired
-  };
-  
-  export default withStyles(styles)(SignUp);
+  classes: PropTypes.object.isRequired
+};
+
+export default withStyles(styles)(SignUp);
