@@ -4,7 +4,6 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 import MenuIcon from '@material-ui/icons/Menu';
 import OAuthSignIn from './OAuthSignIn';
 
-
 const styles = {
     root: {
       flexGrow: 1,
@@ -124,7 +123,7 @@ function SignUp(props) {
         <TermsAndCond />
         <div align="center">
             <Button type="submit" variant="contained" color="primary">
-                Sign Up
+                Create Account
             </Button>
         </div>
         

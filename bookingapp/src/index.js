@@ -1,15 +1,14 @@
-import React from 'react';
+ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import SignUp from './SignUp';
-import OAuthSignIn from './OAuthSignIn';
-
+import SignIn from './SignIn';
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     <SignUp />
-    {/* <OAuthSignIn /> */}
+    {/* <SignIn /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

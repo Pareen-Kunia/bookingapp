@@ -2,7 +2,8 @@ import { withStyles } from "@material-ui/styles";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import {Grid,Button} from '@material-ui/core';
-
+import GIcon from './Gicon';
+// Authentication Grid Used in Sign In and Sign Up Page
 const styles = {
     button: {
         alignItems: 'center',
@@ -35,9 +36,9 @@ function OAuthSignIn(props) {
         <Grid item>
         <Button variant="contained"
         className = {classes.button}
-        startIcon={<FacebookIcon />}
+        startIcon={<GIcon />}
         >
-            Facebook
+            Google
         </Button>
         </Grid>
     </Grid>
