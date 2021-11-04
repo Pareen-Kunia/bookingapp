@@ -7,8 +7,8 @@ import SignIn from './SignIn';
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <SignUp />
-    {/* <SignIn /> */}
+    {/* <SignUp /> */}
+    <SignIn />
   </React.StrictMode>,
   document.getElementById('root')
 );

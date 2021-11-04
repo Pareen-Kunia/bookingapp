@@ -49,6 +49,7 @@ function SignIn(props) {
           label="Password"
           type="password"
           variant="outlined"
+          required
           fullWidth
           InputProps={{
               endAdornment: (
@@ -62,6 +63,11 @@ function SignIn(props) {
         <Grid item align="center">
         <Button type="submit" variant="contained" color="primary" >
                 Sign In
+            </Button>
+        </Grid>
+        <Grid item align="center">
+        <Button type="submit" variant="contained" color="primary" >
+                Forgot Email id or Password ?
             </Button>
         </Grid>
     </Grid>
