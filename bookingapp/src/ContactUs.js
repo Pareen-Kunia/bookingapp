@@ -3,60 +3,18 @@ import { PropTypes } from 'prop-types'
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import MenuIcon from '@material-ui/icons/Menu';
 import OAuthSignIn from './OAuthSignIn';
-import AlertDialogSlide from "./TermsAndCondition"
 
 const styles = {
-    root: {
-      flexGrow: 1,
-    },
-    forms: {
-        display: "flex",
-        justifyContent: "left",
-        alignItems: "left",
-        flexDirection: "column",
-    },
     box: {
         width: 500,
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#F5F5F5',
-        borderColor: 'red',
-        border: '1',
-    },
-    txt: {
-        margin: '5',
-    },
-    button: {
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    trial: {
-        flexGrow: 1 
-    },
-  };
-   
-function TermsAndCond() {
-    return (
-        <div>
-
-
-        <FormControlLabel
-        control={<Checkbox
-        inputProps={{
-            'aria-label': 'secondary checkbox'
-        }}
-        /> }
-        label={<AlertDialogSlide />}
-        
-        />
-     
-        </div>
-    )
+    }
 }
 
-
-function SignUp(props) {
-    const { classes } = props;
+function ContactUs(props) {
+    const {classes} = props
     return (
         <div>
         <AppBar position="static">
@@ -76,77 +34,124 @@ function SignUp(props) {
             <Button color="inherit" variant="outlined">Login</Button>
         </Toolbar>
     </AppBar><br />
-    <Box className={classes.box} m="auto" p={3} sx={{ boxShadow: 5}}>
+    <Grid container spacing={2}>
+  <Grid item xs={8}>
+    
+  
+  
+  
+    <Box className={classes.box} m="auto" p={7} sx={{ boxShadow: 5}}>
     <Typography variant="h4" align = "center">
-        Sign Up
+        Contact Us<Typography variant="subtitle1" align = "inherit">
+        Feel Free to Contact Us    
+    </Typography>
+         
     </Typography> <br />
+    <Grid container spacing={2}>
+  <Grid item xs={8}>
+    
+  
+  
+  
     <form className={classes.forms}>
 
     <Grid container direction={'row'}>
-    <Grid item xl={6} md={6} sm={12} xs={12}>
+    <Grid item xl={3} md={6} sm={12} xs={12}>
     <TextField id="standard-basic" label="First Name" variant="outlined"/> 
     </Grid>
-    <Grid item xl={6} md={6} sm={12} xs={12}>
+    <Grid item xl={3} md={6} sm={12} xs={12}>
     <TextField id="standard-basic" label="Last Name" variant="outlined"/> 
+    </Grid>
+    <Grid item xl={3} md={3} sm={12} xs={12}>
+    {/* <TextField
+          id="outlined-multiline-static"
+          label="Multiline"
+          multiline
+          rows={4}
+          defaultValue="Default Value"
+        /> */}
     </Grid>
     </Grid>
     <br />
     <TextField label="Email Id" type="email" variant="outlined" fullWidth/> <br />
-    <TextField
-          id="standard-adornment-password"
-          label="Password"
-          type="password"
-          variant="outlined"
-          InputProps={{
-              endAdornment: (
-                <InputAdornment position="end">
-                <VisibilityIcon />
-              </InputAdornment>
-              ),
-          }}
-        /> <br />
-        <TextField
-        variant='outlined'
-          id="standard-adornment-password"
-          label="Confirm Password"
-          type="password"
-          InputProps={{
-              endAdornment: (
-                <InputAdornment position="end">
-                <VisibilityIcon />
-              </InputAdornment>
-              ),
-          }}
-        /> <br />
+        <br />
         <Grid container direction = {'row'} spacing={4}>
         <Grid item>
         <TextField label="Contact Number" variant='outlined' inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} />
         </Grid>
         <Grid item>
+        
         <TextField id="standard-basic" label="Business Name" variant="outlined" required/>
         </Grid>
         </Grid>
         <br />
-        <TermsAndCond />
+        
+        
+        <div align="right">
         <br />
-        <div align="center">
+        <br />
+        
             <Button type="submit" variant="contained" color="primary">
-                Create Account
+                Send Message
             </Button>
         </div>
         
         </form>
+        </Grid>
+        <Grid item xs={4}>
+        <Grid item xl={3} md={3} sm={12} xs={12}>
+    {/* <TextField
+          id="outlined-multiline-static"
+          label="Multiline"
+          multiline
+          rows={4}
+          defaultValue="Default Value"
+        /> */}
+        <TextField style ={{width: '500%'}}
+          id="filled-multiline-static"
+          label="Message"
+          multiline
+          rows={14}
+          defaultValue="Message"
+          variant="filled"
+        />
+    </Grid>
+    
+    </Grid>
+    </Grid>
         </Box>
-    <Typography variant="h5" align="center">
-        Or <br />
-        Sign Up Using... <br />
-    </Typography> <br /> <br />
-    <OAuthSignIn />
+        </Grid>
+        <Grid item xs={4} align = "left">
+        <br />
+        <br />
+        <br />
+        <br /> <br />
+
+        <Typography variant="h4" align = "left">
+        🌏Our Office
+        
+    </Typography> 
+    <Typography variant="h6" align = "left">
+         _____________________________________________
+    </Typography> <br />  
+    <Typography variant="h6" align = "left" >
+        Kusol lab
+    </Typography> <br />  
+
+    xyz,New York <br />  
+    P:(123)456-789
+    <br />   <br />  
+    <Typography variant="h6" align = "left">
+        Praveen
+    </Typography>
+    abc@gmail.com
+
+    
+  </Grid>
+  </Grid>
+    
     </div>
     )
 }
-SignUp.propTypes = {
-  classes: PropTypes.object.isRequired
-};
 
-export default withStyles(styles)(SignUp);
+export default withStyles(styles)(ContactUs);
