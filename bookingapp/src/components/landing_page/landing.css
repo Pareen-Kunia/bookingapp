@@ -17,6 +17,11 @@
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
 }
+
+.about__text{
+  font-size: 20px;
+}
+
 @media screen and (min-width: 768px){
   :root{
     --big-font-size: 3.5rem;
