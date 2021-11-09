@@ -7,12 +7,23 @@ import { CustomerList, CustomerCreate, CustomerEdit } from './Customer';
 import { CalenderList, CalenderEdit, CalenderCreate } from './Calender';
 import { EmployeeList, EmployeeEdit, EmployeeCreate } from './Employee';
 import { RoleList, RoleEdit, RoleCreate } from './Role';
-
-import { createTheme } from '@material-ui/core/styles';
+import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
     palette: {
-        type: 'dark', // Switching the dark mode on is a single property value change.
+        type: 'dark',
+        primary: {
+            light: '#757ce8',
+            main: '#3f50b5',
+            dark: '#002884',
+            contrastText: '#fff',
+        },
+        secondary: {
+            light: '#ff7961',
+            main: '#f44336',
+            dark: '#ba000d',
+            contrastText: '#000',
+        }
     },
 });
 
