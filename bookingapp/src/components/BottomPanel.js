@@ -13,61 +13,61 @@ import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const BottomPanel = () => {
-     return (
+  return (
 
 
-          <div id="btm">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#00cba9" fill-opacity="1" d="M0,288L1440,0L1440,0L0,0Z"></path>
-</svg>
-<h1 id="text"> OPERATIONS</h1>
-<div className="cardboxx"> 
-<Card className="card-back" sx={{ maxWidth: 345 }}>
-      
-      <CardContent className="cardb" >
-        <Typography gutterBottom variant="h4" color="white" component="div">
-         <AddTwoToneIcon fontSize='large'  className="icon"/> Manage Roles
-        </Typography>
-        <Button className="btn-b" variant="contained" size='small' style={{borderRadius:"10rem"}}> < ArrowForwardIcon  color="white"fontSize="medium"/></Button>
-        
-      </CardContent>
-     
-    </Card>
+    <div id="btm">
 
-    <Card  className="card-back" sx={{ maxWidth: 345 }}>
-      
-      <CardContent className="cardb">
-        <Typography gutterBottom variant="h4" color="white" component="div">
-         <PersonIcon fontSize='large'  className="icon"/> Employee Details
-        </Typography>
-        <Button className="btn-b" variant="contained" size='small' style={{borderRadius:"10rem"}}> < ArrowForwardIcon  color="white"fontSize="medium"/></Button>
-              
-      </CardContent>
-     
-    </Card>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#00cba9" fill-opacity="1" d="M0,288L1440,0L1440,0L0,0Z"></path>
+      </svg>
+      <h1 id="text"> OPERATIONS</h1>
+      <div className="cardboxx">
+        <Card className="card-back" sx={{ maxWidth: 345 }}>
 
-    <Card  className="card-back" sx={{ maxWidth: 345 }}>
-      
-      <CardContent className="cardb">
-        <Typography gutterBottom variant="h4" color="white" component="div">
-         <ShoppingBagIcon fontSize='large'  className="icon"/> Assign Roles
-        </Typography> 
-        <Button className="btn-b" variant="contained" size='small' style={{borderRadius:"10rem"}}> < ArrowForwardIcon  color="white"fontSize="medium"/></Button>
-               
+          <CardContent className="cardb" >
+            <Typography gutterBottom variant="h4" color="white" component="div">
+              <AddTwoToneIcon fontSize='large' className="icon" /> Manage Roles
+            </Typography>
+            <Button className="btn-b" variant="contained" size='small' style={{ borderRadius: "10rem" }}> < ArrowForwardIcon color="white" fontSize="medium" /></Button>
 
-      </CardContent>
-     
-    </Card>
-</div>
+          </CardContent>
 
-<div id="bg-foot"> 
-  <h3 id="text-foot"> Developed by Kusol Labs Inc.</h3>
-</div>
+        </Card>
 
-               
-          </div>
-     )
+        <Card className="card-back" sx={{ maxWidth: 345 }}>
+
+          <CardContent className="cardb">
+            <Typography gutterBottom variant="h4" color="white" component="div">
+              <PersonIcon fontSize='large' className="icon" /> Employee Details
+            </Typography>
+            <Button className="btn-b" variant="contained" size='small' style={{ borderRadius: "10rem" }}> < ArrowForwardIcon color="white" fontSize="medium" /></Button>
+
+          </CardContent>
+
+        </Card>
+
+        <Card className="card-back" sx={{ maxWidth: 345 }}>
+
+          <CardContent className="cardb">
+            <Typography gutterBottom variant="h4" color="white" component="div">
+              <ShoppingBagIcon fontSize='large' className="icon" /> Assign Roles
+            </Typography>
+            <Button className="btn-b" variant="contained" size='small' style={{ borderRadius: "10rem" }}> < ArrowForwardIcon color="white" fontSize="medium" /></Button>
+
+
+          </CardContent>
+
+        </Card>
+      </div>
+
+      <div id="bg-foot">
+        <h3 id="text-foot"> Developed by Kusol Labs Inc.</h3>
+      </div>
+
+
+    </div>
+  )
 }
 
 export default BottomPanel

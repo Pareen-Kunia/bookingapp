@@ -4,17 +4,16 @@ import Pannel from './components/pannel';
 import BottomPanel from './components/BottomPanel';
 
 
-function Admin()
- {
+function Admin() {
   return (
-  <>
-  <main > 
-  <Pannel/>
-  <BottomPanel/>
-  
-  </main>
-  
-  </>
+    <>
+      <main >
+        <Pannel />
+        <BottomPanel />
+
+      </main>
+
+    </>
   );
 }
 

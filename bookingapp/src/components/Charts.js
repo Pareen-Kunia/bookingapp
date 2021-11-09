@@ -1,18 +1,41 @@
-import React from 'react'
-import './style.css';
-import Typography from '@mui/material/Typography';
-const Charts = () => {
-     return (
-          <>
-          <div id="img-container"> <Typography gutterBottom variant="h4" padding="2rem" font-weight="500" color="white" component="div">
-        Analytics Of Services
-        </Typography>
+import React from 'react';
+import { Line } from 'react-chartjs-2';
 
-     <img id="chart" src='./images/chart.png'/></div>
-          
-               
-          </>
-     )
+const state = {
+     labels: ['January', 'February', 'March',
+          'April', 'May'],
+     datasets: [
+          {
+               label: 'Rainfall',
+               fill: true,
+               lineTension: 0.5,
+               backgroundColor: 'rgba(34, 25, 255)',
+               borderColor: 'rgba(0,0,0,1)',
+               borderWidth: 2,
+               data: [65, 59, 80, 81, 56]
+          }
+     ]
 }
 
-export default Charts
+export default class Charts extends React.Component {
+     render() {
+          return (
+               <div>
+                    <Line
+                         data={state}
+                         options={{
+                              title: {
+                                   display: true,
+                                   text: 'Average Rainfall per month',
+                                   fontSize: 20
+                              },
+                              legend: {
+                                   display: true,
+                                   position: 'right'
+                              }
+                         }}
+                    />
+               </div>
+          );
+     }
+}
