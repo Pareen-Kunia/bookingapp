@@ -25,8 +25,8 @@ ReactDOM.render(
   <React.StrictMode> 
     <ReactRouter />
     {/* <App /> */}
-    <AdminPanel />
-    {/* <SignIn /> */}
+    {/* <AdminPanel /> */}
+    <SignIn />
   </React.StrictMode>,
   document.getElementById('root')
 );
