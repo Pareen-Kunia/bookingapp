@@ -1,8 +1,8 @@
-import { Grid,Box,InputAdornment, Typography, AppBar, Toolbar, IconButton, Button, withStyles, TextField, FormControlLabel, Checkbox, Menu } from '@material-ui/core';
-import { PropTypes } from 'prop-types'
+import { Grid,Box,InputAdornment, Typography, AppBar, Toolbar, IconButton, Button, withStyles, TextField } from '@material-ui/core';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import MenuIcon from '@material-ui/icons/Menu';
 import OAuthSignIn from './OAuthSignIn';
+import {Link} from 'react-router-dom';
 
 const styles = {
     box: {
@@ -31,7 +31,9 @@ function SignIn(props) {
           </Typography>
           </Grid>
           </Grid>
+          <Link to='/signup'>
           <Button color="inherit" variant="outlined" style={{minWidth:'180px'}}>Create Account</Button>
+          </Link>
       </Toolbar>
   </AppBar><br />
   <Box p={3} m="auto" className={classes.box}>
@@ -61,11 +63,14 @@ function SignIn(props) {
         />
         </Grid>
         <Grid item align="center">
+        <Link to="/admin">
         <Button type="submit" variant="contained" color="primary" >
                 Sign In
             </Button>
+            </Link>
         </Grid>
         <Grid item align="center">
+        {/* Add Link here for Reset Password Page */}
         <Button type="submit" variant="contained" color="primary" >
                 Forgot Email id or Password ?
             </Button>
