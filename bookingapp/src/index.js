@@ -8,4 +8,4 @@ import "./index.css";
 import SignUp from "./SignUp";
 // import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(<Navbar />, document.getElementById("root"));
+ReactDOM.render(<Reset />, document.getElementById("root"));
