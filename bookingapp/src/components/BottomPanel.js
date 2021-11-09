@@ -29,7 +29,7 @@ const BottomPanel = () => {
         <Typography gutterBottom variant="h4" color="white" component="div">
          <AddTwoToneIcon fontSize='large'  className="icon"/> Manage Roles
         </Typography>
-        <Button className="btn-b" variant="contained" size='large' style={{borderRadius:"10rem"}}> < ArrowForwardIcon  color="white"fontSize="medium"/></Button>
+        <Button className="btn-b" variant="contained" size='large' style={{borderRadius:"10rem"}}> < ArrowForwardIcon  color="white"fontSize="large"/></Button>
         
       </CardContent>
      
@@ -41,7 +41,7 @@ const BottomPanel = () => {
         <Typography gutterBottom variant="h4" color="white" component="div">
          <PersonIcon fontSize='large'  className="icon"/> Employee Details
         </Typography>
-        <Button className="btn-b" variant="contained" size='large' style={{borderRadius:"10rem"}}> < ArrowForwardIcon  color="white"fontSize="medium"/></Button>
+        <Button className="btn-b" variant="contained" size='large' style={{borderRadius:"10rem"}}> < ArrowForwardIcon  color="white"fontSize="large"/></Button>
               
       </CardContent>
      
@@ -53,7 +53,7 @@ const BottomPanel = () => {
         <Typography gutterBottom variant="h4" color="white" component="div">
          <ShoppingBagIcon fontSize='large'  className="icon"/> Assign Roles
         </Typography> 
-        <Button className="btn-b" variant="contained" size='large' style={{borderRadius:"10rem"}}> < ArrowForwardIcon  color="white"fontSize="medium"/></Button>
+        <Button className="btn-b" variant="contained" size='large' style={{borderRadius:"10rem"}}> < ArrowForwardIcon  color="white"fontSize="large"/></Button>
                
 
       </CardContent>
