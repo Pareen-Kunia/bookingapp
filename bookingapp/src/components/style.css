@@ -3,6 +3,8 @@
      padding: 0;
      box-sizing: border-box;
      font-size: 62.5%;
+     scroll-behavior: smooth;
+     
 }
 
 .nav{
@@ -246,7 +248,7 @@ background: linear-gradient(56deg, rgb(86, 235, 156), rgb(30, 33, 199))
           
           background: rgb(51, 51, 51);
           width: 100%;
-          margin:.3rem;
+          margin:0rem;
           align-self: center;
           justify-content: center;
         
@@ -257,7 +259,7 @@ background: linear-gradient(56deg, rgb(86, 235, 156), rgb(30, 33, 199))
      }
 
      .card-d{
-          width: 20rem; 
+          width: 30rem; 
      }
     
      .cardc{width: 20rem;}
