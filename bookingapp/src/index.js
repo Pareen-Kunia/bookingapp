@@ -9,8 +9,8 @@ import AdminPanel from './components/AdminPanel';
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <AdminPanel />
-    {/* <SignIn /> */}
+    {/* <AdminPanel /> */}
+    <SignIn />
   </React.StrictMode>,
   document.getElementById('root')
 );
