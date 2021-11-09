@@ -20,7 +20,6 @@ const Navbar = () => {
                             <li class="nav__item"><a href='/' class="nav__link">Skills</a></li>
                             <li class="nav__item"><a href='/' class="nav__link">Work</a></li>
                             <li class="nav__item"><a href='/' class="nav__link">Contact</a></li>
-                            <li class="nav__item"><a href='/Reset' class="nav__link">Forgot Password</a></li>
                         </ul>
                     </div>
 
