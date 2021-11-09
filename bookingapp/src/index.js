@@ -21,7 +21,6 @@ const ReactRouter = () => {
   </Router>
   )
 }
-
 ReactDOM.render(
   <React.StrictMode> 
     <ReactRouter />
