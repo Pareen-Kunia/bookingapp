@@ -1,0 +1,322 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-size: 62.5%;
+     scroll-behavior: smooth;
+     
+}
+
+.nav{
+     display: flex;
+     flex-direction: row;
+    
+     color: rgb(255, 255, 255);
+     background: linear-gradient(4deg,#b6b6b600,rgba(83, 83, 83, 0));
+     height: 7vh;
+     font-size: medium;
+     width: 100%;
+     align-items: center;
+     padding: .5rem;
+     
+}
+.items{
+     display: flex;
+     flex-direction: row;
+     align-self: center;
+     width: 80%;
+     justify-content: flex-end;
+     align-self: center;
+     
+}
+.left{
+     width: 20%;
+}
+.draw-bg{
+     background:linear-gradient(45deg , rgb(37, 37, 37), rgb(20, 20, 20));
+     color: white; 
+     text-align: center;
+     display: flex;
+     align-items: center;
+}
+
+.map{
+     background:rgb(27, 36, 42);
+     background-image:linear-gradient(34deg,black,black) ;
+}
+.draw-ig{
+     background:rgb(27, 36, 42);
+     color: white; 
+     text-align: center;
+     margin: auto;
+     margin: 1rem;
+     
+}
+.para{
+     color:rgb(170, 170, 170) ;
+     background: rgb(27, 36, 42);
+     text-align: center;
+}
+.nav-bg{
+     background:linear-gradient(45deg , rgb(165, 165, 165), rgb(66, 120, 247));
+}
+#title-admin{
+     color: rgb(255, 255, 255);
+     font-size: large;
+     
+}
+
+.nav-company{
+     color: rgb(255, 255, 255);
+     padding: 1rem;
+     font-size: 1rem;
+}
+
+.search{
+     font-size: 1rem;
+     margin: 1rem;
+}
+
+.profile{
+     display: flex;
+     justify-content: center;
+   
+     padding: 2px;
+     color: white;
+     background:rgb(27, 36, 42);
+     
+}
+
+.main{
+     margin-top: 10vh;
+     background :linear-gradient(45deg , rgb(223, 223, 223), rgba(80, 124, 226, 0.39)) ;
+}
+.icon{
+     font-size: 5rem;
+     color:rgb(255, 255, 255)
+}
+
+.card-holder{
+     display:flex;
+     flex-direction: row;
+     justify-content: space-around;
+     margin-bottom: 2rem;
+}
+.cardc{
+     margin: .5rem;
+     width: 30rem;
+     color: white;
+     background: linear-gradient(60deg, rgb(33, 255, 199), rgb(14, 14, 14));
+}
+.cardc:hover{
+     background: rgb(44, 44, 44);
+     color: white;
+}
+
+.carde{
+     margin: .5rem;
+     width: 30rem;
+     color: white;
+     background: linear-gradient(60deg, rgb(22, 92, 255), rgb(14, 14, 14));
+}
+.carde:hover{
+     background: rgb(44, 44, 44);
+     color: white;
+}
+
+.cards{
+     margin: .5rem;
+     width: 30rem;
+     color: white;
+     background: linear-gradient(60deg, rgb(155, 155, 155), rgb(0, 0, 0));
+}
+.cards:hover{
+     background: rgb(44, 44, 44);
+     color: white;
+}
+.c-name{
+     color: white;
+     font-size: 1.5rem;
+}
+
+.c-data{
+     color: rgb(238, 238, 238);
+     font-size: 2rem;
+}
+#com{
+     margin-bottom: 5rem;
+}
+
+#card-box{
+     display: flex;
+     width: 90%;
+     border-radius: 1.2rem;
+     margin: auto;
+justify-content: space-evenly;
+border:1px rgb(0, 0, 0) solid;
+padding: 2rem;
+background: rgb(105, 105, 105);
+}
+
+.card-d{
+     align-items: center;
+     width: 62rem;
+     justify-content: center;
+     background: linear-gradient(60deg , rgb(35, 221, 149) , rgb(81, 7, 199));
+
+}
+
+#chart{
+     width:50rem;
+     height:25rem;
+     margin: 2rem;
+}
+#img-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+#btm{
+background: linear-gradient(56deg, rgb(86, 235, 156), rgb(30, 33, 199))
+}
+
+.btn-b{
+  width: 10rem;
+  height: 10rem;
+  margin: 6rem;
+}
+
+.cardboxx
+{display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     margin-top:07rem;
+
+}
+
+.card-back{
+     margin: auto;
+     margin-bottom: 10rem;
+     
+}
+.cardb{
+     background: rgb(46, 46, 46);
+     margin-left: 4rem;
+     color: rgb(236, 0, 0);
+     box-shadow: rgba(0, 47, 255, 0.4) 0px 2px 4px, rgba(20, 75, 255, 0.3) 0px 7px 13px -3px, rgba(101, 111, 255, 0.2) 0px -3px 0px inset;
+}
+#text{
+     font-size: 8rem;
+     margin-top: -29rem;
+     color: rgb(255, 255, 255);
+     padding: 2rem;
+    
+}
+#bg-foot{
+     background: rgb(46, 46, 46);
+     
+}
+#text-foot{
+     font-size: 02rem;
+     color: white;
+     padding: 2rem;
+     text-align: center;
+}
+@media (min-device-width: 260px) and (max-device-width: 900px) {
+     .card-holder{
+          justify-content: space-between;
+     }
+     #text{
+          font-size: 3.7rem;
+          text-align: center;
+          margin-top: -6rem;
+         
+     }
+     #btm{
+          background: linear-gradient(56deg, rgb(26, 26, 26), rgb(30, 117, 199))
+          }
+     .cardb{
+          margin: auto;
+     }
+     .cardboxx{
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+     }
+     #card-box{
+          
+          background: rgb(51, 51, 51);
+          width: 100%;
+          margin:0rem;
+          align-self: center;
+          justify-content: center;
+        
+     }
+     #chart{
+          width:20rem;
+          height: 10rem;
+     }
+
+     .card-d{
+          width: 30rem; 
+     }
+    
+     .cardc{width: 20rem;}
+     .carde{width: 20rem;}
+     .cards{width: 20rem;}
+    #title-admin{
+         font-size: 1rem;
+         border: white 1px solid;
+         padding: .3rem;
+    }
+    .items{
+         font-size: x-small;
+         margin: .3rem;
+    }
+    .search{
+         font-size: .5rem;
+    }
+    .nav{
+      padding: .3rem; 
+    }
+
+    #btm{
+         background: linear-gradient(45deg,rgb(50, 83, 92) , rgb(255, 254, 254)) ;
+    }
+}
+@media (max-device-width: 370px)
+{    .cardc{width: 30rem; margin: auto;padding: .4rem;}
+.carde{width: 30rem;margin: auto;padding: .4rem;}
+.cards{width: 30rem;margin: auto;padding: .4rem;}
+     .card-holder{
+          flex-direction: column;
+          justify-content: space-between;
+          
+     }
+     #btm{
+          background: linear-gradient(56deg, rgb(11, 17, 75), rgb(47, 30, 199))
+          }
+#title-admin{
+     font-size: 0px;
+     border: 0px;
+     margin-left:-4rem ;
+}
+
+#card-box{
+     flex-direction: column;
+     background: rgb(51, 51, 51);
+     width: 100%;
+     margin:0rem;
+     align-self: center;
+     justify-content: center;
+   
+}
+.cardb{
+     margin-left: 2rem;
+}
+#chart{
+     width:24rem;
+     height: 9rem;
+}
+}
