@@ -27,7 +27,10 @@ function SignIn(props) {
           </Grid>
           <Grid item>
           <Typography variant="h4" align="center" m="auto">
-            'O'ppointment
+          <Link to="/" class="nav__link">
+          'O'ppointment
+
+                </Link>
           </Typography>
           </Grid>
           </Grid>
