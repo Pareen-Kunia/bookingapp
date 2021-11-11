@@ -3,7 +3,8 @@ import { PropTypes } from 'prop-types'
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import MenuIcon from '@material-ui/icons/Menu';
 import OAuthSignIn from './OAuthSignIn';
-import AlertDialogSlide from "./TermsAndCondition"
+import AlertDialogSlide from "./TermsAndCondition";
+import {Link} from 'react-router-dom';
 
 const styles = {
     root: {
@@ -73,7 +74,9 @@ function SignUp(props) {
             </Typography>
             </Grid>
             </Grid>
+            <Link to="/signin">
             <Button color="inherit" variant="outlined">Login</Button>
+            </Link>
         </Toolbar>
     </AppBar><br />
     <Box className={classes.box} m="auto" p={3} sx={{ boxShadow: 5}}>
