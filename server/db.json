@@ -5,18 +5,12 @@
       "body": "Rash",
       "appointmentAt": "2021-11-09",
       "id": 2
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
     },
     {
-      "id": 2,
-      "body": "some comment",
-      "postId": 1
+      "appointmentAt": "2021-11-11",
+      "title": "Cough",
+      "body": "nil",
+      "id": 3
     }
   ],
   "users": [
@@ -59,6 +53,42 @@
       "contactNo": "702028663",
       "birthday": "2021-11-01",
       "id": "4"
+    }
+  ],
+  "calenders": [
+    {
+      "id": 1,
+      "employeeId": "some comment",
+      "status": 1,
+      "appointmentAt": "2012-04-23T18:25:43.511Z"
+    },
+    {
+      "appointmentAt": "2021-11-26T14:30:00.000Z",
+      "employeeId": "Tomh",
+      "id": "7",
+      "status": "0"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "company": "COMPP",
+      "position": "VP",
+      "interest": "All"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "salary": "some comment",
+      "work_location": "goa"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "Tom",
+      "label": "VP"
     }
   ]
 }

@@ -1,9 +1,18 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "../landing_page/landing.css";
 import Reset from "../reset_pass/reset";
+import { useImage } from 'react-image'
+
 /* eslint no-use-before-define: 0 */ // --> OFF
 
 const Navbar = () => {
+  function MyImageComponent() {
+    const { src } = useImage({
+      srcList: 'https://sntechnologies.org/wp-content/uploads/2021/08/undraw_events_trans.png',
+    })
+
+    return <img src={src} />
+  }
   return (
     <div>
       <header className="l-header">
@@ -89,7 +98,9 @@ const Navbar = () => {
           </div>
 
           <div className="home__img">
-            <img src="assets/img/perfil.png" alt="" />
+            <Suspense fallback={<div>Loading... </div>}>
+              <MyImageComponent />
+            </Suspense>
           </div>
         </div>
 
@@ -98,9 +109,12 @@ const Navbar = () => {
 
           <div className="about__container bd-grid">
             <div className="about__img">
-                        <img src="../../assets/oppointment.jpg" alt=""/>
-                    </div>
-                    
+              <Suspense fallback={<div>Loading... </div>}>
+
+                <MyImageComponent />
+              </Suspense>
+            </div>
+
             <div>
               {/* <h2 className="about__subtitle">I'am Marlon</h2> */}
               <p className="about__text">

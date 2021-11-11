@@ -1,7 +1,6 @@
 import React from 'react'
 import { List, Create, Edit, DateField, DateTimeInput, DateInput, SimpleForm, Datagrid, EmailField, TextField, TextInput, EditButton, DeleteButton, ImageInput, ImageField } from 'react-admin'
 
-
 export const CalenderList = (props) => {
     return (
         <List {...props}>
@@ -9,7 +8,7 @@ export const CalenderList = (props) => {
                 <TextField source="id" />
                 <TextField source="employeeId" />
                 <TextField source="status" />
-                <DateTimeInput source="appointmentAt" />
+                <TextField source="appointmentAt" />
                 <EditButton basePath="/calenders" />
                 <DeleteButton basePath="/calenders" />
             </Datagrid>
@@ -36,7 +35,7 @@ export const CalenderEdit = (props) => {
                 <TextInput disabled source="id" />
                 <TextField source="employeeId" />
                 <TextField source="status" />
-                <DateTimeInput source="appointmentAt" />
+                {/* <DateTimeInput source="appointmentAt" /> */}
             </SimpleForm>
         </Edit>
     )
