@@ -27,7 +27,9 @@ function ContactUs(props) {
             </Grid>
             <Grid item>
             <Typography variant="h4" align="center" m="auto">
+              <a href='/'>
               'O'ppointment
+              </a>
             </Typography>
             </Grid>
             </Grid>
