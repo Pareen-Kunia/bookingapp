@@ -59,6 +59,7 @@ function Reset(props) {
             color="inherit"
             variant="outlined"
             style={{ minWidth: "180px" }}
+            href="/signup"
           >
             Create Account
           </Button>
@@ -102,7 +103,7 @@ function Reset(props) {
               />
             </Grid>
             <Grid item align="center">
-              <Button type="submit" variant="contained" color="primary">
+              <Button type="submit" href="/signin" variant="contained" color="primary">
                 Submit
               </Button>
             </Grid>

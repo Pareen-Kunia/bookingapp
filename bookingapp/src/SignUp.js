@@ -74,9 +74,7 @@ function SignUp(props) {
             </Typography>
             </Grid>
             </Grid>
-            <Link to="/signin">
-            <Button color="inherit" variant="outlined">Login</Button>
-            </Link>
+            <Button color="inherit" href="/signin" variant="outlined">Login</Button>
         </Toolbar>
     </AppBar><br />
     <Box className={classes.box} m="auto" p={3} sx={{ boxShadow: 5}}>
@@ -133,7 +131,7 @@ function SignUp(props) {
         <TermsAndCond />
         <br />
         <div align="center">
-            <Button type="submit" variant="contained" color="primary">
+            <Button type="submit" href="/admin" variant="contained" color="primary">
                 Create Account
             </Button>
         </div>

@@ -16,10 +16,11 @@ const ReactRouter = () => {
       <Switch>
         <Route exact path="/" component={Navbar} />{" "}
         <Route exact path="/reset" component={Reset} />
-        <Route exact path="/signup" component={SignUp} />
+        <Route exact path="/signup" component={SignUp} /> 
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/contact" component={ContactUs} />
         <Route exact path="/admin" component={AdminPanel} />
+        <Route exact path="/reset" component={Reset} />
       </Switch>
     </BrowserRouter>
   );

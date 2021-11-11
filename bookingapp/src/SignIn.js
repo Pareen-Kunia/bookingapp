@@ -32,9 +32,7 @@ function SignIn(props) {
           </Typography>
           </Grid>
           </Grid>
-          <Link to="/signup">
-          <Button color="inherit" variant="outlined" style={{minWidth:'180px'}}>Create Account</Button>
-          </Link>
+          <Button color="inherit" href="/signup" variant="outlined" style={{minWidth:'180px'}}>Create Account</Button>
       </Toolbar>
   </AppBar><br />
   <Box p={3} m="auto" className={classes.box}>
@@ -64,18 +62,14 @@ function SignIn(props) {
         />
         </Grid>
         <Grid item align="center">
-        <Link to="/admin">
-        <Button type="submit" variant="contained" color="primary" >
+        <Button type="submit" href="/admin" variant="contained" color="primary" >
                 Sign In
             </Button>
-            </Link>
         </Grid>
         <Grid item align="center">
-        <Link to="/reset">
-        <Button type="submit" variant="contained" color="primary" >
+        <Button type="submit" href="/reset" variant="contained" color="primary" >
                 Forgot Email id or Password ?
             </Button>
-            </Link>
         </Grid>
     </Grid>
       </form>
