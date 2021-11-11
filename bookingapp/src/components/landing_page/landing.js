@@ -27,16 +27,6 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav__item">
-                <a href="/" className="nav__link">
-                  Skills
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="/" className="nav__link">
-                  Work
-                </a>
-              </li>
-              <li className="nav__item">
                 <a href="/contact" className="nav__link">
                   Contact
                 </a>
