@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "../landing_page/landing.css";
 import Reset from "../reset_pass/reset";
 import { useImage } from 'react-image'
@@ -88,7 +88,9 @@ const Navbar = () => {
           </div>
 
           <div className="home__img">
-            <MyImageComponent />
+            <Suspense fallback={<div>Loading... </div>}>
+              <MyImageComponent />
+            </Suspense>
           </div>
         </div>
 
@@ -97,7 +99,10 @@ const Navbar = () => {
 
           <div className="about__container bd-grid">
             <div className="about__img">
-              <MyImageComponent />
+              <Suspense fallback={<div>Loading... </div>}>
+
+                <MyImageComponent />
+              </Suspense>
             </div>
 
             <div>
