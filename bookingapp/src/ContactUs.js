@@ -1,9 +1,4 @@
-import { Grid,Box,InputAdornment, Typography, AppBar, Toolbar, IconButton, Button, withStyles, TextField, FormControlLabel, Checkbox, Menu } from '@material-ui/core';
-import { PropTypes } from 'prop-types'
-import VisibilityIcon from '@material-ui/icons/Visibility';
-import MenuIcon from '@material-ui/icons/Menu';
-import OAuthSignIn from './OAuthSignIn';
-
+import { Grid,Box,Typography, Button, withStyles, TextField } from '@material-ui/core';
 const styles = {
     box: {
         width: 500,
@@ -17,7 +12,7 @@ function ContactUs(props) {
     const {classes} = props
     return (
         <div>
-        <AppBar position="static">
+        {/* <AppBar position="static">
           <Toolbar>
           <Grid container direction={'row'} className={classes.trial} spacing={3}>
           <Grid item>
@@ -33,15 +28,11 @@ function ContactUs(props) {
             </Typography>
             </Grid>
             </Grid>
-            <Button color="inherit" variant="outlined">Login</Button>
+            <Button color="inherit" href="/signin" variant="outlined">Login</Button>
         </Toolbar>
-    </AppBar><br />
+    </AppBar><br /> */}
     <Grid container spacing={2}>
   <Grid item xs={8}>
-    
-  
-  
-  
     <Box className={classes.box} m="auto" p={7} sx={{ boxShadow: 5}}>
     <Typography variant="h4" align = "center">
         Contact Us<Typography variant="subtitle1" align = "inherit">
@@ -51,12 +42,7 @@ function ContactUs(props) {
     </Typography> <br />
     <Grid container spacing={2}>
   <Grid item xs={8}>
-    
-  
-  
-  
     <form className={classes.forms}>
-
     <Grid container direction={'row'}>
     <Grid item xl={3} md={6} sm={12} xs={12}>
     <TextField id="standard-basic" label="First Name" variant="outlined"/> 
