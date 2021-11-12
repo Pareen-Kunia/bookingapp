@@ -1,9 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import SignUp from "./SignUp";
-import SignIn from "./SignIn";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Admin from './Admin';
 import ContactUs from "./ContactUs";
 import AdminPanel from "./components/AdminPanel";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
@@ -19,7 +16,7 @@ const ReactRouter = () => {
         <Route exact path="/signup" component={SignUp} /> 
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/contact" component={ContactUs} />
-        <Route exact path="/admin" component={AdminPanel} />
+        <Route exact path="/admin" component={Admin} />
         <Route exact path="/reset" component={Reset} />
       </Switch>
     </BrowserRouter>
@@ -32,3 +29,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+
