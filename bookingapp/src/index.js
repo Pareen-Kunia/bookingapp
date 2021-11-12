@@ -1,11 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Admin from './Admin';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import SignUp from "./SignUp";
+import SignIn from "./SignIn";
 import ContactUs from "./ContactUs";
 import AdminPanel from "./components/AdminPanel";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/landing_page/landing";
 import Reset from "./components/reset_pass/reset";
+import Admin from './Admin';
 
 const ReactRouter = () => {
   return (
