@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import SignUp from "./SignUp";
 import SignIn from "./SignIn";
 import ContactUs from "./ContactUs";
@@ -10,7 +9,7 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/landing_page/landing";
 import Reset from "./components/reset_pass/reset";
 import Admin from './Admin';
-import WorkingHours from "./components/WorkingHours";
+// import WorkingHours from "./components/WorkingHours";
 
 const ReactRouter = () => {
   return (
@@ -24,7 +23,7 @@ const ReactRouter = () => {
         <Route exact path="/admin" component={Admin} />
         <Route exact path="/reset" component={Reset} />
         <Route exact path="/employees" component={AdminPanel} />
-        <Route exact path="/workinghours" component={WorkingHours} />
+        {/* <Route exact path="/workinghours" component={WorkingHours} /> */}
       </Switch>
     </BrowserRouter>
   );

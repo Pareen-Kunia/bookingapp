@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import SettingsIcon from '@mui/icons-material/Settings';
 
-import Map from "./Map"
+// import Map from "./Map"
 import Drawer from '@mui/material/Drawer';
 import CssBaseline from '@mui/material/CssBaseline';
 import MuiAppBar from '@mui/material/AppBar';
@@ -180,7 +180,7 @@ function Pannel() {
         </List>
            
         <card className="draw-ig">
-        <Map className="map"/>
+        {/* <Map className="map"/> */}
         </card>     
       </Drawer>
 

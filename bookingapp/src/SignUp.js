@@ -4,7 +4,6 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 import MenuIcon from '@material-ui/icons/Menu';
 import OAuthSignIn from './OAuthSignIn';
 import AlertDialogSlide from "./TermsAndCondition";
-import {Link} from 'react-router-dom';
 
 const styles = {
     root: {
@@ -39,8 +38,6 @@ const styles = {
 function TermsAndCond() {
     return (
         <div>
-
-
         <FormControlLabel
         control={<Checkbox
         inputProps={{
@@ -48,9 +45,7 @@ function TermsAndCond() {
         }}
         /> }
         label={<AlertDialogSlide />}
-        
         />
-     
         </div>
     )
 }
@@ -60,7 +55,7 @@ function SignUp(props) {
     const { classes } = props;
     return (
         <div>
-        <AppBar position="static">
+        {/* <AppBar position="static">
           <Toolbar>
           <Grid container direction={'row'} className={classes.trial} spacing={3}>
           <Grid item>
@@ -76,14 +71,14 @@ function SignUp(props) {
             </Grid>
             <Button color="inherit" href="/signin" variant="outlined">Login</Button>
         </Toolbar>
-    </AppBar><br />
+    </AppBar><br /> */}
     <Box className={classes.box} m="auto" p={3} sx={{ boxShadow: 5}}>
     <Typography variant="h4" align = "center">
         Sign Up
     </Typography> <br />
     <form className={classes.forms}>
 
-    <Grid container direction={'row'}>
+    <Grid container direction={'row'} spacing={2}>
     <Grid item xl={6} md={6} sm={12} xs={12}>
     <TextField id="standard-basic" label="First Name" variant="outlined"/> 
     </Grid>
