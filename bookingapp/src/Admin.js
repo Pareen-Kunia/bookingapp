@@ -1,19 +1,20 @@
 import * as React from 'react';
 
 import Pannel from './components/pannel';
-import BottomPanel from './components/BottomPanel';
+import {Link} from 'react-router-dom';
 
 
-function Admin() {
+function Admin()
+ {
   return (
-    <>
-      <main >
-        <Pannel />
-        <BottomPanel />
-
-      </main>
-
-    </>
+  <>
+  <main > 
+  <Pannel/>
+  
+  
+  </main>
+  
+  </>
   );
 }
 
