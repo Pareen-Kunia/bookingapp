@@ -24,19 +24,17 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 
 import './style.css';
-import { Button, Grid } from '@mui/material';
+import { Button } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
-import  CardC  from './CardC';
-import  CardEmp  from './CardEmp';
-import  CardS  from './CardS';
-import  CardData from './CardData';
+import CardC from './CardC';
+import CardEmp from './CardEmp';
+import CardS from './CardS';
+import CardData from './CardData';
 
 
 import BottomPanel from './BottomPanel';
-import Footer from './Footer';
-import MultiType from "./MultiType";
-
+import Footer from './Footer/Footer';
 
 const drawerWidth = 300;
 
@@ -88,7 +86,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 function Pannel() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-  
+
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -98,9 +96,9 @@ function Pannel() {
   };
 
   return (
-    <Box  sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar  position="fixed" open={open}>
+      <AppBar position="fixed" open={open}>
         <Toolbar className="nav-bg">
           <IconButton
             color="inherit"
@@ -109,32 +107,32 @@ function Pannel() {
             edge="start"
             sx={{ mr: 2, ...(open && { display: 'none' }) }}
           >
-          <MenuIcon/>
+            <MenuIcon />
           </IconButton>
           <nav className="nav">
-                    <div className="left">
-                    <h4 id="title-admin">MeetInc</h4>
-                    </div>
-              
+            <div className="left">
+              <h4 id="title-admin">MeetInc</h4>
+            </div>
 
-          <div className="items">
-          <h3 className="nav-company" > 'O'ppointment</h3>
-               <input className="search" type="text" placeholder="Search.."></input>
 
-               <Button variant="contained" size='small' style={{borderRadius:"10rem"}}> <SearchIcon color="white"fontSize="medium"/></Button>
-               
-          </div>
-          
-               
-               </nav>
-          </Toolbar>
-            
+            <div className="items">
+              <h3 className="nav-company" > 'O'ppointment</h3>
+              <input className="search" type="text" placeholder="Search.."></input>
+
+              <Button variant="contained" size='small' style={{ borderRadius: "10rem" }}> <SearchIcon color="white" fontSize="medium" /></Button>
+
+            </div>
+
+
+          </nav>
+        </Toolbar>
+
       </AppBar>
-     
-          
+
+
 
       <Drawer
-      
+
         sx={{
           width: drawerWidth,
           flexShrink: 0,
@@ -146,64 +144,64 @@ function Pannel() {
         variant="persistent"
         anchor="left"
         open={open}
-        
+
       >
         <DrawerHeader className="draw-bg">
-          <Typography variant="h4"onClick={handleDrawerClose} > ADMIN PANEL </Typography>
+          <Typography variant="h4" onClick={handleDrawerClose} > ADMIN PANEL </Typography>
           <IconButton onClick={handleDrawerClose} >
-            {theme.direction === 'ltr' ? <ChevronLeftIcon className="draw-bg"/> : <ChevronRightIcon />}
+            {theme.direction === 'ltr' ? <ChevronLeftIcon className="draw-bg" /> : <ChevronRightIcon />}
           </IconButton>
         </DrawerHeader>
         <Stack direction="row" className="profile">
-      
-      <Avatar
-        alt="Siddhesh Kamath"
-        src="./images/sid.jfif"
-        
-        sx={{ width: 126, height: 126 }}
-      />
-    </Stack>
 
-    <Typography className="draw-ig" variant="h4" align="center"> Siddhesh Kamath </Typography>
-      <Typography className="para"> Junior Web Developer At Kusol Labs </Typography>
-       
-        
+          <Avatar
+            alt="Siddhesh Kamath"
+            src="./images/sid.jfif"
+
+            sx={{ width: 126, height: 126 }}
+          />
+        </Stack>
+
+        <Typography className="draw-ig" variant="h4" align="center"> Siddhesh Kamath </Typography>
+        <Typography className="para"> Junior Web Developer At Kusol Labs </Typography>
+
+
         <List className="draw-ig">
           {['Support', 'Settings'].map((text, index) => (
             <ListItem className="draw-ig" button key={text}>
               <ListItemIcon >
-                {index % 3 === 1 ? < FavoriteIcon className="draw-ig" /> : <SettingsIcon className="draw-ig"/> }
+                {index % 3 === 1 ? < FavoriteIcon className="draw-ig" /> : <SettingsIcon className="draw-ig" />}
               </ListItemIcon>
-              <ListItemText  primary={text} />
+              <ListItemText primary={text} />
             </ListItem>
           ))}
         </List>
-           
+
         <card className="draw-ig">
-        {/* <Map className="map"/> */}
-        </card>     
+          {/* <Map className="map"/> */}
+        </card>
       </Drawer>
 
 
       <Main className="main" open={open}>
-<div className="card-holder"> 
-        <CardC/>
+        <div className="card-holder">
+          <CardC />
 
-        <CardEmp/>
+          <CardEmp />
 
-        <CardS/>
+          <CardS />
 
-</div>
-        <CardData/>
-       
+        </div>
+        <CardData />
 
-        <br/><br/>
- <BottomPanel />
- <Footer/>
+
+        <br /><br />
+        <BottomPanel />
+        <Footer />
       </Main>
-     
+
     </Box>
-    
+
   );
 }
 export default Pannel;

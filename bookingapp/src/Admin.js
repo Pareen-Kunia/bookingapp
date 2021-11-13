@@ -1,20 +1,17 @@
 import * as React from 'react';
 
 import Pannel from './components/pannel';
-import {Link} from 'react-router-dom';
 
-
-function Admin()
- {
+function Admin() {
   return (
-  <>
-  <main > 
-  <Pannel/>
-  
-  
-  </main>
-  
-  </>
+    <>
+      <main >
+        <Pannel />
+
+
+      </main>
+
+    </>
   );
 }
 
