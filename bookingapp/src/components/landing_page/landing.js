@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import "../landing_page/landing.css";
-import Reset from "../reset_pass/reset";
 import { useImage } from 'react-image';
 
 /* eslint no-use-before-define: 0 */ // --> OFF
@@ -10,8 +9,8 @@ const Navbar = () => {
     const { src } = useImage({
       srcList: 'https://sntechnologies.org/wp-content/uploads/2021/08/undraw_events_trans.png',
     })
- 
-    return <img src={src} />
+
+    return <img alt="image" src={src} />
   }
   return (
     <div>
