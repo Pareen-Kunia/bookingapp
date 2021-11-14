@@ -10,6 +10,7 @@ import {
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import Header from "./components/Header/Header";
 import OAuthSignIn from "./OAuthSignIn";
+import AdminHeader from "./components/Header/Header";
 
 const styles = {
   box: {
@@ -41,7 +42,8 @@ function SignIn(props) {
           <Button color="inherit" href="/signup" variant="outlined" style={{minWidth:'180px'}}>Create Account</Button>
       </Toolbar>
   </AppBar><br /> */}
-      <Header />
+  <AdminHeader purpose="Sign Up" h="/SignUp"/>
+      
       <Box p={3} m="auto" className={classes.box}>
         <Typography variant="h4" align="center">
           Sign In

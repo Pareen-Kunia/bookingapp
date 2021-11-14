@@ -15,6 +15,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import Button from "@material-ui/core/Button";
 const drawerWidth = 300;
 
 const AppBar = styled(MuiAppBar, { shouldForwardProp: (prop) => prop !== 'open', })(({ theme, open }) => ({
@@ -41,7 +42,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'center',
 }));
 
-function AdminHeader() {
+function AdminHeader(props) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -75,6 +76,7 @@ function AdminHeader() {
 
             <div className="items">
             </div>
+            <Button color="inherit" href={props.h} variant="outlined" style={{minWidth:'180px'}}>{props.purpose}</Button>
 
 
           </nav>

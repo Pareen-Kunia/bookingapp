@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types'
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import OAuthSignIn from './OAuthSignIn';
 import AlertDialogSlide from "./TermsAndCondition";
+import AdminHeader from "./components/Header/Header";
 
 const styles = {
     root: {
@@ -71,6 +72,7 @@ function SignUp(props) {
             <Button color="inherit" href="/signin" variant="outlined">Login</Button>
         </Toolbar>
     </AppBar><br /> */}
+    <AdminHeader purpose="Sign In" h="/signin" />
             <Box className={classes.box} m="auto" p={3} sx={{ boxShadow: 5 }}>
                 <Typography variant="h4" align="center">
                     Sign Up
