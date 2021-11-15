@@ -4,9 +4,10 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import MenuIcon from "@material-ui/icons/Menu";
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import SettingsIcon from '@mui/icons-material/Settings';
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
+import LoginIcon from '@mui/icons-material/Login';
 import { styled, useTheme } from '@mui/material/styles';
+import InfoIcon from '@mui/icons-material/Info';
 import Drawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
 import List from '@mui/material/List';
@@ -108,21 +109,35 @@ function AdminHeader(props) {
         </DrawerHeader>
 
         <List className="draw-ig" style={{ backgroundColor: "black", height: "600px" }}>
-          {['SignUp', 'Support', 'Settings'].map((text, index) => (
-            <a href={"/" + text}>
 
-              <ListItem style={{ color: "#fff" }} className="draw-ig" button key={text}>
-                <ListItemIcon >
-                  {index % 3 === 1 ? < FavoriteIcon className="draw-ig" /> : <SettingsIcon className="draw-ig" />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            </a>
-          ))}
+          <a href={"/signup"}>
+            <ListItem style={{ color: "#fff" }} className="draw-ig" button>
+              <ListItemIcon >
+                <AppRegistrationIcon className="draw-ig" />
+              </ListItemIcon>
+              <ListItemText primary={"SignUp"} />
+            </ListItem>
+          </a>
+
+          <a href={"/signin"}>
+            <ListItem style={{ color: "#fff" }} className="draw-ig" button>
+              <ListItemIcon >
+                <LoginIcon className="draw-ig" />
+              </ListItemIcon>
+              <ListItemText primary={"Signin"} />
+            </ListItem>
+          </a>
+
+          <a href={"/aboutus"}>
+            <ListItem style={{ color: "#fff" }} className="draw-ig" button>
+              <ListItemIcon >
+                <InfoIcon className="draw-ig" />
+              </ListItemIcon>
+              <ListItemText primary={"About Us"} />
+            </ListItem>
+          </a>
         </List>
-
       </Drawer>
-
     </div>
   )
 }

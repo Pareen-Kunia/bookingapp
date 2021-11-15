@@ -17,6 +17,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import AssignmentIcon from '@mui/icons-material/Assignment';
 const drawerWidth = 300;
 
 const AppBar = styled(MuiAppBar, { shouldForwardProp: (prop) => prop !== 'open', })(({ theme, open }) => ({
@@ -112,7 +113,7 @@ function AdminHeader() {
                         <a style={{ color: "#fff" }} href={"/" + text + "s"}>
                             <ListItem button key={text}>
                                 <ListItemIcon className="draw-ig">
-                                    {index % 2 === 0 ? <InboxIcon className="draw-ig" /> : <MailIcon className="draw-ig" />}
+                                    <AssignmentIcon className="draw-ig" />
                                 </ListItemIcon>
                                 <ListItemText primary={text} />
                             </ListItem>
