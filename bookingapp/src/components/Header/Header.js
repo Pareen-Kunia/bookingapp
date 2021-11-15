@@ -76,7 +76,7 @@ function AdminHeader(props) {
 
             <div className="items">
             </div>
-            <Button color="inherit" href={props.h} variant="outlined" style={{minWidth:'180px'}}>{props.purpose}</Button>
+            <Button color="inherit" href={props.h} variant="outlined" style={{ minWidth: '180px' }}>{props.purpose}</Button>
 
 
           </nav>
@@ -109,7 +109,7 @@ function AdminHeader(props) {
 
         <List className="draw-ig" style={{ backgroundColor: "black", height: "600px" }}>
           {['SignUp', 'Support', 'Settings'].map((text, index) => (
-            <a href={"/" + text + "s"}>
+            <a href={"/" + text}>
 
               <ListItem style={{ color: "#fff" }} className="draw-ig" button key={text}>
                 <ListItemIcon >
